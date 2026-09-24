@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*18 user turns. Tool outputs and reasoning omitted.*
+*19 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -327,5 +327,18 @@ The mix is your choice, not mine, but here's a narrower version of the question:
 One number for question 1 is also still open, and a word is enough for it:
 
 - With "more gently": if one artist has four times the downloads of another, should it be about twice as likely to be picked, or only a little more likely?
+
+**User:**
+- at 0, true popularity should decide it and at 1  market share should decide it
+
+**Claude:**
+- 🔧 `Bash` — Show the choice rule template and helpers
+Noted: at 0, true popularity decides the pick, and at 1, market share decides it.
+
+Three gaps are left before I can write the code. A word each is enough:
+
+1. **Gentleness:** if one artist has four times the downloads of another, should its pull be about twice as strong, or only a little stronger?
+2. **In between:** at `social_influence` 0.5, should counts and taste count equally? Or should the balance move some other way as it goes from 0 to 1?
+3. **No downloads:** at `social_influence` 0 the pick goes by true popularity alone. Can a shown artist with no downloads be picked then? And for the first user in each world, none of the five shown has a download yet. What should that user do?
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
