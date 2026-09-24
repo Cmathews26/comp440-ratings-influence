@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*23 user turns. Tool outputs and reasoning omitted.*
+*24 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -396,5 +396,25 @@ Downloads pull at a square root ratio and the chances have to always sum to 1, w
 **Claude:**
 - 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
 - 🔧 `Bash` — Check the slot and print the hand-check case
+I wrote this into the Part 3 "Your rule in your words" slot: Downloads pull at a square root ratio and the chances have to always sum to 1, while social influence  blends the shares in a straight line. When an artist has no downloads, their social share falls to true popularity.
+
+A note on what the code does: it falls back to true popularity only when none of the five shown has a download. A single artist with no downloads just gets zero pull. You can change the slot at any time.
+
+I ran `uv run python hand_check.py --case`:
+
+```
+Hand check, at social influence 0.5:
+  Bruno Mars     at the top of the list (position 0), 3 downloads, true popularity 50
+  Justin Bieber  below it (position 1), no downloads, true popularity 50
+```
+
+In this case, which artist should your rule favor, and by a little or a lot? One sentence is enough.
+
+**User:**
+Bruno Mars by a little
+
+**Claude:**
+- 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Bash` — Check the slot and run the hand check
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
