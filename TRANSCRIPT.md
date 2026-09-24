@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*19 user turns. Tool outputs and reasoning omitted.*
+*20 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -340,5 +340,16 @@ Three gaps are left before I can write the code. A word each is enough:
 1. **Gentleness:** if one artist has four times the downloads of another, should its pull be about twice as strong, or only a little stronger?
 2. **In between:** at `social_influence` 0.5, should counts and taste count equally? Or should the balance move some other way as it goes from 0 to 1?
 3. **No downloads:** at `social_influence` 0 the pick goes by true popularity alone. Can a shown artist with no downloads be picked then? And for the first user in each world, none of the five shown has a download yet. What should that user do?
+
+**User:**
+1. Twice 2. Yes they should balance equallye 3. Yes
+
+**Claude:**
+Noted:
+1. Four times the downloads gives twice the pull.
+2. Counts and taste balance equally at 0.5.
+3. At 0, an artist with no downloads can be picked.
+
+One case is still open. It only matters when `social_influence` is 1 and no shown artist has a download yet, as for the first user in each world. Then the counts give every artist zero pull, so there's nothing to pick by. What should that user do? A line is enough.
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
