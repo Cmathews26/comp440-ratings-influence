@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*35 user turns. Tool outputs and reasoning omitted.*
+*36 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -590,5 +590,15 @@ Give every song a weight of its downloads+1 so a song with no downloads is half 
 Noted: every artist gets a weight of its downloads plus 1.
 
 What counts should the user see with the five: the real counts, no counts at all, or changed numbers? A word is enough.
+
+**User:**
+Real
+
+**Claude:**
+Noted: the user sees the real counts.
+
+One detail: I'll list the five in the order they're drawn. Your Part 3 rule doesn't use position on the list, so the order can't change what users pick.
+
+Before I write the code: what do you expect your recommender to do to inequality, unpredictability and fidelity? One sentence is enough.
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
