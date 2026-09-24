@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*40 user turns. Tool outputs and reasoning omitted.*
+*41 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -664,5 +664,11 @@ Is part 5 the optional part?
 No, Part 5 is required and graded like Parts 0 to 4. It's two short questions, about 5 minutes. The optional part is the follow-ups, which I'll offer after Part 5.
 
 So, the first question: where does this show up in data you've already handled, or in an interface you use? For example, HW1's figure of when a movie's tags and ratings arrived, HW0's three rankings, or the "Popular on Netflix" row in the Sep 22 reading. One sentence is enough.
+
+**User:**
+I'm not sure how this data shows up.
+
+**Claude:**
+A small hint. Think of the "Popular on Netflix" row. How does a show get onto that row? And once it's there, what happens to how many people watch it? Does that sound like anything in the model you just ran?
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
