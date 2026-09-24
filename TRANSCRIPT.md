@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*43 user turns. Tool outputs and reasoning omitted.*
+*44 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -687,5 +687,24 @@ I was wrong about being able to have artists with no downloads be included
 **Claude:**
 - 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
 - 🔧 `Bash` — Check the slots and commit Part 5
+I wrote this into the Part 5 "A moment Claude was wrong" slot: I was wrong about being able to have artists with no downloads be included
+
+Part 5 is committed as `Part 5 done`. That covers every graded part.
+
+These follow-ups are optional and not graded, and you're finished without them:
+- **What is shown** (`followup_shown.py`): top five in random order versus sorted by count.
+- **One assumption** (`followup_assumption.py`): change one thing your rule or the model assumes.
+- **More recommenders:** a second and third rule in Part 4's shape, compared.
+- **More worlds:** rerun a part with 1,000 worlds instead of 300, to see which numbers move and which only get steadier.
+
+Want one, or shall we go straight to submitting?
+
+**User:**
+No just submit
+
+**Claude:**
+- 🔧 `Skill` — checkpoint
+- 🔧 `Bash` — Run all parts and list what is missing
+- 🔧 `Bash` — Update the transcript and check git state
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
