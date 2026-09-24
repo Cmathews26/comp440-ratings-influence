@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*22 user turns. Tool outputs and reasoning omitted.*
+*23 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -389,5 +389,12 @@ I wrote `my_choice()` in `my_choice.py` from your answers:
 - **No downloads yet:** when no shown artist has a download, the social share falls back to true popularity.
 
 Now say the rule in your own words, for the "Your rule in your words" slot. One sentence is enough.
+
+**User:**
+Downloads pull at a square root ratio and the chances have to always sum to 1, while social influence  blends the shares in a straight line. When an artist has no downloads, their social share falls to true popularity.
+
+**Claude:**
+- 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Bash` — Check the slot and print the hand-check case
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
