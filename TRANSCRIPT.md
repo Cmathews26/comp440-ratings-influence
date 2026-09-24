@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*29 user turns. Tool outputs and reasoning omitted.*
+*30 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -515,5 +515,29 @@ NOthing
 I wrote this into the "What you changed" slot, as you typed it: NOthing
 
 Now compare your two curves with Figures 1 and 2 in the paper linked from the README. What do your curves show against them? Stick to direction, not size. One or two sentences are enough.
+
+**User:**
+In both, the social-influence condition produces more inequality and more unpredictability than the independent and my curves follow the general direction of the figures from the paper.
+
+**Claude:**
+- 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Bash` — Check the slot
+I wrote this into the "What the two curves show against the paper" slot: In both, the social-influence condition produces more inequality and more unpredictability than the independent and my curves follow the general direction of the figures from the paper.
+
+These are your Part 0 predictions, as `part3_influence.py` printed them:
+
+```
+Your Part 0 predictions, as WRITEUP.md has them:
+  1. Once people can see the counts, which artist wins most often?
+      Taylor Swift
+  2. Does inequality rise or fall with social influence?
+      Inequality will rise
+  3. Does the best artist ever lose a world?
+      Probably
+  4. Can a recommender lower inequality without lowering fidelity to true taste?
+      I think so but not sure
+```
+
+Which of them would you now change, and why?
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
