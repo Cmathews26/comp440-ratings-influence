@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*3 user turns. Tool outputs and reasoning omitted.*
+*4 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -60,6 +60,20 @@ Setup is done. I filled in `**Name:** Colin Mathews` and `**Date:** 2026-09-24` 
 Part 0 is next: your predictions, made before anything runs. A word or a line each is enough, and a guess is fine.
 
 1. Once people can see the download counts, which artist ends up with the most downloads in most worlds?
+2. As people pay more attention to the counts, does inequality between the artists rise or fall?
+3. Does the best artist (true popularity 100) ever lose a world?
+4. Can a recommender rule lower inequality without making the outcome track true taste less well?
+
+**User:**
+1. Taylor Swift
+
+**Claude:**
+- 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 0 question 1 slot: Taylor Swift
+
+I'll commit the predictions once all four are in. A word or a line each is enough for the other three:
+
 2. As people pay more attention to the counts, does inequality between the artists rise or fall?
 3. Does the best artist (true popularity 100) ever lose a world?
 4. Can a recommender rule lower inequality without making the outcome track true taste less well?
