@@ -42,19 +42,19 @@ Code: `recommender.py`, `part2_recommender.py`. Figure: `figures/part2_strip.png
 Code: `my_choice.py`, `hand_check.py`, `part3_influence.py`. Figures: `figures/part3_gini.png`,
 `figures/part3_unpredictability.png`.
 
-**Your rule in your words:** XXXX
+**Your rule in your words:** Downloads pull at a square root ratio and the chances have to always sum to 1, while social influence  blends the shares in a straight line. When an artist has no downloads, their social share falls to true popularity.
 
-**Hand check, before the table: which artist your rule should favor, and by a little or a lot:** XXXX
+**Hand check, before the table: which artist your rule should favor, and by a little or a lot:** Bruno Mars by a little
 
-**Hand check: whether the table matched what you said:** XXXX
+**Hand check: whether the table matched what you said:** Yes
 
-**The shape you expect the two curves to have, as you told Claude before the run:** XXXX
+**The shape you expect the two curves to have, as you told Claude before the run:** Both will be descending but I have no idea to be honest
 
-**What you changed in your rule, at the hand check or after the run, or "nothing":** XXXX
+**What you changed in your rule, at the hand check or after the run, or "nothing":** NOthing
 
-**What the two curves show against the paper's Figures 1 and 2, in one or two sentences:** XXXX
+**What the two curves show against the paper's Figures 1 and 2, in one or two sentences:** In both, the social-influence condition produces more inequality and more unpredictability than the independent and my curves follow the general direction of the figures from the paper.
 
-**Revisited: which of your Part 0 predictions you would now change, and why:** XXXX
+**Revisited: which of your Part 0 predictions you would now change, and why:** I don't think I'd change any of them
 
 ## Part 4. Your recommender
 
