@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*45 user turns. Tool outputs and reasoning omitted.*
+*46 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -763,5 +763,18 @@ Git on this machine is using a password or an old token, and GitHub no longer ac
 ```
 
 For the first one, choose GitHub.com, then HTTPS, then log in with a web browser. If `gh` isn't installed, run `! brew install gh` first. Tell me when you're logged in and I'll push again.
+
+**User:**
+I pushed manually but ensure it's all submitted ocrrectly
+
+**Claude:**
+- 🔧 `Bash` — Compare the local branch with GitHub
+I checked the push: GitHub's `main` is at the same commit as your local `main` (`b72b12e`), with nothing left out. Your work is all on GitHub at https://github.com/Cmathews26/comp440-ratings-influence.
+
+Now submit the form. Select "activity" and paste your repo's GitHub URL into the textbox:
+
+    https://forms.gle/mgKcnqzTGxNaGvteA
+
+Have you submitted it?
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
