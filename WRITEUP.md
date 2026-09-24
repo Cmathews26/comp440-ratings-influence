@@ -60,11 +60,11 @@ Code: `my_choice.py`, `hand_check.py`, `part3_influence.py`. Figures: `figures/p
 
 Code: `my_recommender.py`, `part4_recommender.py`. Figure: `figures/part4_recommenders.png`.
 
-**Your rule in words, before any code:** XXXX
+**Your rule in words, before any code:** Each listener sees 5 songs picked at random, and songs with more downloads are more likely to be picked.
 
-**What you expect it to do to inequality, unpredictability and fidelity, as you told Claude before the run:** XXXX
+**What you expect it to do to inequality, unpredictability and fidelity, as you told Claude before the run:** I expect it to produce less inequality and unpredictability than top_five and better fidelity
 
-**What it bought and what it cost, one sentence:** XXXX
+**What it bought and what it cost, one sentence:** It bought lower inequality and unpredictability as well as higher fidelity than top_5, but cost fidelity to random_five.
 
 ## Part 5. Reflection
 
