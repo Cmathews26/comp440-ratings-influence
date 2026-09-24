@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*21 user turns. Tool outputs and reasoning omitted.*
+*22 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -359,5 +359,35 @@ Help me
 That's your choice, but here's a hint.
 
 For that user, the counts are all zero. What else does your rule know about the five shown artists, apart from their counts? And could it use that, or give up on knowing anything at all?
+
+**User:**
+True popularity
+
+**Claude:**
+- 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/my_choice.py
+I wrote `my_choice()` in `my_choice.py` from your answers:
+
+```python
+    taste = step("taste share: true popularity scaled to sum to 1",
+                 normalize([TRUE_POPULARITY[artist] for artist in shown]))
+    weights = step("download pull: square root of each count",
+                   [counts.get(artist, 0) ** 0.5 for artist in shown])
+    if sum(weights) == 0:
+        social = step("social share: no shown artist has a download, so true popularity instead",
+                      taste)
+    else:
+        social = step("social share: the pulls scaled to sum to 1", normalize(weights))
+    chances = step("chance: taste share times (1 - social_influence) plus social share times social_influence",
+                   [(1 - social_influence) * t + social_influence * s
+                    for t, s in zip(taste, social)])
+    return chances
+```
+
+- **Downloads pull gently:** a square root, so four times the downloads gives twice the pull.
+- **Summing to 1:** the chances have to add up to 1, so I divide each weight by the total of the five. `normalize()` in `choose.py` does that.
+- **The mix:** the two shares are blended in a straight line by `social_influence`, which gives an equal balance at 0.5.
+- **No downloads yet:** when no shown artist has a download, the social share falls back to true popularity.
+
+Now say the rule in your own words, for the "Your rule in your words" slot. One sentence is enough.
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
