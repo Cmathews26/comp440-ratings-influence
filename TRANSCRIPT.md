@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*13 user turns. Tool outputs and reasoning omitted.*
+*14 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -240,5 +240,38 @@ Nothing
 **Claude:**
 - 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
 - 🔧 `Bash` — Check the slot and run the Part 2 script
+I wrote this into the Part 2 "What Claude corrected" slot: Nothing
+
+Then I ran `uv run python part2_recommender.py`:
+
+```
+The users are the same as in Part 1: they ignore the download counts and pick by true
+popularity alone. Only the artists they are shown changed.
+
+top_five, social influence 0, 300 worlds:
+  mean Gini          0.638   inequality within a world
+  unpredictability   0.086   how much an artist's share differs between worlds
+  fidelity           0.503   rank correlation of shares with true popularity
+  true best wins     0.570   fraction of worlds the Beatles finish strictly first
+  accidental hits    0.000   fraction of worlds won by true popularity 30 or less
+
+Artists with any download in world 0: 5 of 11
+
+Saved figures/part2_strip.png
+```
+
+The new strip plot is `figures/part2_strip.png`. It's laid out like Part 1's.
+
+What changed against Part 1? One sentence is enough.
+
+**User:**
+The market share and true popularity are nowhere near as aligned as in Fig1.
+
+**Claude:**
+- 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 2 "What changed against Part 1" slot: The market share and true popularity are nowhere near as aligned as in Fig1.
+
+Part 2 is complete: part2_recommender.py ran, figures/part2_strip.png drawn, and your words are in "The capabilities and limitations of `top_five`", "What Claude corrected" and "What changed against Part 1". Ready to commit?
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
