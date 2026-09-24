@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*26 user turns. Tool outputs and reasoning omitted.*
+*27 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -455,5 +455,47 @@ Both will be descending but I have no idea to be honest
 **Claude:**
 - 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
 - 🔧 `Bash` — Check the slot and run the Part 3 sweep
+I wrote this into the "shape you expect the two curves to have" slot: Both will be descending but I have no idea to be honest
+
+I ran `uv run python part3_influence.py`:
+
+```
+The independent control (random_five, social influence 0), then top_five at each level; 300 worlds per row:
+                       Gini  unpredictability  fidelity  true best wins  accidental hits
+independent control    0.277             0.010     0.976           0.590            0.000
+social influence 0.0   0.638             0.086     0.503           0.570            0.000
+social influence 0.25  0.627             0.085     0.514           0.573            0.000
+social influence 0.5   0.611             0.089     0.477           0.470            0.000
+social influence 0.75  0.600             0.092     0.453           0.293            0.020
+social influence 1.0   0.909             0.160     0.166           0.183            0.160
+
+Saved figures/part3_gini.png and figures/part3_unpredictability.png
+
+Your Part 0 predictions, as WRITEUP.md has them:
+  1. Once people can see the counts, which artist wins most often?
+      Taylor Swift
+  2. Does inequality rise or fall with social influence?
+      Inequality will rise
+  3. Does the best artist ever lose a world?
+      Probably
+  4. Can a recommender lower inequality without lowering fidelity to true taste?
+      I think so but not sure
+```
+
+There are two figures:
+- `figures/part3_gini.png` plots Gini against social influence.
+- `figures/part3_unpredictability.png` plots unpredictability against social influence.
+
+Each figure has a square for the independent control.
+
+Do the results look the way you expected? One sentence is enough.
+
+**User:**
+Kind of but not really. The gini curve descends until social influece around 0.75 then sharply increases while unpredictability ascends slightly unitl 0.75 then increases sharply.
+
+**Claude:**
+Noted.
+
+You can change your rule once now, after the run. Changes made during the hand check don't count toward that. Do you want to change anything in `my_choice.py`, or keep it as it is?
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
