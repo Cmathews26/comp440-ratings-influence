@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*20 user turns. Tool outputs and reasoning omitted.*
+*21 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -351,5 +351,13 @@ Noted:
 3. At 0, an artist with no downloads can be picked.
 
 One case is still open. It only matters when `social_influence` is 1 and no shown artist has a download yet, as for the first user in each world. Then the counts give every artist zero pull, so there's nothing to pick by. What should that user do? A line is enough.
+
+**User:**
+Help me
+
+**Claude:**
+That's your choice, but here's a hint.
+
+For that user, the counts are all zero. What else does your rule know about the five shown artists, apart from their counts? And could it use that, or give up on knowing anything at all?
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
