@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*16 user turns. Tool outputs and reasoning omitted.*
+*17 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -299,6 +299,18 @@ Question 1 also asks how strongly. Should an artist's pull grow in step with its
 The other three are still open, and a line each is enough:
 
 - Can an artist with no downloads be picked?
+- Should an artist nearer the top of the list be more likely to be picked?
+- How should `social_influence`, from 0 to 1, set the mix between the counts and the user's own taste?
+
+**User:**
+- No an artist without downloads cannot be picked
+
+**Claude:**
+Noted: an artist without downloads can't be picked.
+
+Three answers are still open, and a line each is enough:
+
+- How strongly should downloads pull? In step with the count (twice the downloads, twice as likely), more gently, or more steeply?
 - Should an artist nearer the top of the list be more likely to be picked?
 - How should `social_influence`, from 0 to 1, set the mix between the counts and the user's own taste?
 
