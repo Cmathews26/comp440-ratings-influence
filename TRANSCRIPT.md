@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*7 user turns. Tool outputs and reasoning omitted.*
+*8 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -111,5 +111,47 @@ Last one, and a word or a line is enough:
 - 🔧 `Read` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
 - 🔧 `Bash` — Commit the Part 0 predictions
 - 🔧 `Bash` — Run the Part 1 independent-users script
+Your predictions are committed as `Part 0 predictions`. Part 1 is next: users choosing on their own.
+
+I ran `uv run python part1_independent.py`:
+
+```
+Matplotlib is building the font cache; this may take a moment.
+random_five, social influence 0, 300 worlds:
+  mean Gini          0.277   inequality within a world
+  unpredictability   0.010   how much an artist's share differs between worlds
+  fidelity           0.976   rank correlation of shares with true popularity
+  true best wins     0.590   fraction of worlds the Beatles finish strictly first
+  accidental hits    0.000   fraction of worlds won by true popularity 30 or less
+
+World 0, each artist's share of the world's downloads:
+  Beatles        0.142
+  Taylor Swift   0.159
+  Mariah Carey   0.108
+  Drake          0.115
+  Katy Perry     0.134
+  Bruno Mars     0.084
+  Justin Bieber  0.102
+  Cher           0.047
+  Bon Jovi       0.041
+  Miles Davis    0.040
+  John Coltrane  0.028
+
+Saved figures/part1_strip.png
+```
+
+The strip plot, `figures/part1_strip.png`, has one column per artist and one dot per world. A diamond marks each artist's true share.
+
+In your own words, what do Gini and unpredictability each show? "The measures" section in the README defines both, and one sentence is enough.
+
+**User:**
+Gini shows the spread within the world and unpredictability shows spread between worlds.
+
+**Claude:**
+- 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 1 "What Gini and unpredictability each show" slot: Gini shows the spread within the world and unpredictability shows spread between worlds.
+
+Now open `figures/part1_strip.png`. What does the figure show? One sentence is enough.
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
