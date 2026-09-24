@@ -23,9 +23,9 @@ Answered before anything runs. Claude writes them in as you said them, and they 
 
 Code: `part1_independent.py`. Figure: `figures/part1_strip.png`.
 
-**What Gini and unpredictability each show, in your own words:** XXXX
+**What Gini and unpredictability each show, in your own words:** Gini shows the spread within the world and unpredictability shows spread between worlds.
 
-**What the figure shows, one sentence:** XXXX
+**What the figure shows, one sentence:** The figure shows that less popular artists have less variability in market share between worlds.
 
 ## Part 2. The recommender
 
