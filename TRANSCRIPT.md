@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*33 user turns. Tool outputs and reasoning omitted.*
+*34 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -572,5 +572,15 @@ Two facts about the code before I write anything:
 - A recommender also isn't given `social_influence`. `part4_recommender.py` runs every recommender at social influence 0.5, and only your Part 3 choice rule reads that number.
 
 So the last part of your rule can't live in the recommender as written. What do you want to do with it: drop it, or have it mean something the recommender can see? One line is enough.
+
+**User:**
+Each listener sees 5 songs picked at random, and songs with more downloads are more likely to be picked.
+
+**Claude:**
+- 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Bash` — Check the slot
+I replaced your answer in the Part 4 "Your rule in words" slot. It now says: Each listener sees 5 songs picked at random, and songs with more downloads are more likely to be picked.
+
+The code needs one more thing. The first user in each world sees artists with no downloads at all. Can an artist with no downloads be picked for the list? If so, how likely is it compared with an artist that has a download? A line is enough.
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
