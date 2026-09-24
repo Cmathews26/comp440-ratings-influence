@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*28 user turns. Tool outputs and reasoning omitted.*
+*29 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -500,5 +500,20 @@ You can change your rule once now, after the run. Changes made during the hand c
 
 **User:**
 Keeping it
+
+**Claude:**
+Noted: you're keeping the rule as it is.
+
+For the "What you changed" slot: what did you change in your rule, either at the hand check or after the run? Or should it say "nothing"? One sentence is enough.
+
+**User:**
+NOthing
+
+**Claude:**
+- 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Bash` — Check the slot
+I wrote this into the "What you changed" slot, as you typed it: NOthing
+
+Now compare your two curves with Figures 1 and 2 in the paper linked from the README. What do your curves show against them? Stick to direction, not size. One or two sentences are enough.
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
