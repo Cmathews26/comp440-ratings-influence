@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*10 user turns. Tool outputs and reasoning omitted.*
+*11 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -169,5 +169,59 @@ yes
 
 **Claude:**
 - 🔧 `Bash` — Commit Part 1 and show the recommender code
+Part 1 is committed as `Part 1 done`. Part 2 is next: the recommender.
+
+Here is `recommender.py`:
+
+```python
+"""
+A recommender maps the world's download counts so far to two things: the five artists a user is
+shown, in display order, and the download counts shown with them. Position 0 is the top of the
+list. The choice rule sees only what the recommender shows.
+"""
+
+from sim import ARTISTS, NUM_SHOWN
+
+
+def top_five(counts, rng):
+    """The shipped recommender: the five most downloaded artists, most downloaded first.
+
+    `counts` lists only artists with a download, in the order of their first download, and
+    ties keep that order. Until five artists have a download, random artists fill the list.
+    It shows the real download counts with the artists, so it returns `counts` unchanged.
+    """
+    shown = sorted(counts, key=lambda artist: counts[artist], reverse=True)[:NUM_SHOWN]
+    while len(shown) < NUM_SHOWN:
+        artist = ARTISTS[rng.integers(len(ARTISTS))]   # any artist, at random
+        if artist not in shown:
+            shown.append(artist)
+    return shown, counts
+
+
+def random_five(counts, rng):
+    """The control: five different artists picked at random, in random order.
+
+    It ignores `counts` when it picks who to show, so every artist is equally likely to be
+    shown to every user. It shows the real download counts with the artists, so it returns
+    `counts` unchanged.
+    """
+    shuffled = list(ARTISTS)
+    rng.shuffle(shuffled)
+    return shuffled[:NUM_SHOWN], counts
+```
+
+What are the capabilities and limitations of `top_five`? That is, what does it show each user, and what can it never show? One sentence is enough.
+
+**User:**
+Shows the 5 top artists no matter what but also limits scope to just those 5 artists at a given time.
+
+**Claude:**
+- 🔧 `Edit` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/colinmathews/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 2 "capabilities and limitations of `top_five`" slot: Shows the 5 top artists no matter what but also limits scope to just those 5 artists at a given time.
+
+One correction, about the code only. "No matter what" is not quite true. While fewer than five artists have a download, `top_five` fills the empty spots with random artists. Once five artists have a download, it shows the same top five, ordered by count, to every user. From then on, an artist outside those five can't be shown.
+
+What do you want in the "What Claude corrected" slot? Your own words, or "nothing". One sentence is enough.
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
