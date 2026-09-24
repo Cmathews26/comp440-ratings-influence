@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 | 2026-09-24T18:58:14.753Z -->
 ## Session `79dbf150` — 2026-09-24 18:58:14
 
-*15 user turns. Tool outputs and reasoning omitted.*
+*16 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 What does it mean that CodeTogether: Daemon is not installed
@@ -276,5 +276,30 @@ Part 2 is complete: part2_recommender.py ran, figures/part2_strip.png drawn, and
 
 **User:**
 Yes
+
+**Claude:**
+- 🔧 `Bash` — Commit Part 2
+Part 2 is committed as `Part 2 done`. Part 3 is next: social influence. Here you design the choice rule, the code that decides which of the five shown artists a user downloads. There's no single right rule.
+
+Answer these four design questions. A line each is enough:
+
+- Should a user favor artists with more downloads? How strongly?
+- Can an artist with no downloads be picked?
+- Should an artist nearer the top of the list be more likely to be picked?
+- How should `social_influence`, from 0 to 1, set the mix between the counts and the user's own taste?
+
+**User:**
+- Yes, a user should favor artists with more downloads
+
+**Claude:**
+Noted: a user should favor artists with more downloads. I'll write the rule once all four questions are answered.
+
+Question 1 also asks how strongly. Should an artist's pull grow in step with its download count, so twice the downloads means twice as likely? Or more gently than that? Or more steeply?
+
+The other three are still open, and a line each is enough:
+
+- Can an artist with no downloads be picked?
+- Should an artist nearer the top of the list be more likely to be picked?
+- How should `social_influence`, from 0 to 1, set the mix between the counts and the user's own taste?
 
 <!-- end-session: 79dbf150-8b63-4684-9acc-ad5b308070f1 -->
